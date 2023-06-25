@@ -28,15 +28,15 @@ bot_name = "Naruto"
 
 st.title("Chatbot")
 st.write("Muhammed Shanif, Nanda Kishor, Athul Babu")
-
+st.write("Ask me something...")
 counter = 0
 counters=0
 
 while True:
     with st.form(key=f'form-{counters}'):
         counters+=1
-        user_input = st.text_input("Ask me something",f"You ({counter}): ")
-        formButton=st.form_submit_button(label=f"Send {counter}")
+        user_input = st.text_input("",key=f"You ({counter}): ")
+        formButton=st.form_submit_button(label="Send")
         while not formButton:
             pass
         if formButton:
