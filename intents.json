@@ -144,7 +144,7 @@
               "tell me the date","day","what day is is today"
           ],
           "responses": [
-              "Date and Time"
+              "datetime.date.today().isoformat()"
           ]
       },
       {

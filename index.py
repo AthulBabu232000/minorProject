@@ -5,6 +5,7 @@ import streamlit as st
 from model import NeuralNet
 from nltk_utils import bag_of_words, tokenize
 
+
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 with open('intents.json', 'r') as json_data:
@@ -27,8 +28,7 @@ model.eval()
 bot_name = "Naruto"
 
 st.title("Chatbot")
-st.write("Muhammed Shanif, Nanda Kishor, Athul Babu")
-st.write("Ask me something...")
+
 counter = 0
 counters=0
 
